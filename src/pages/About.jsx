@@ -1,13 +1,8 @@
 import { motion } from 'framer-motion';
-import backgroundImage from '../assets/background.jpg';
 
 function About() {
   const containerStyle = {
     padding: '2rem',
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
     color: '#FFFFFF',
     minHeight: '100vh',
     textShadow: '0 0 10px rgba(0, 0, 0, 0.7)',

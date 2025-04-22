@@ -1,13 +1,8 @@
-import backgroundImage from '../assets/background.jpg';
 import { motion } from 'framer-motion';
 
 function Contact() {
   const containerStyle = {
     padding: '2rem',
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
     color: '#FFFFFF',
     minHeight: '100vh',
     textShadow: '0 0 10px rgba(0, 0, 0, 0.7)',
@@ -91,15 +86,12 @@ function Contact() {
         >
           <label>Name:</label><br />
           <input type="text" placeholder="Your name" style={inputStyle} />
-
           <br />
           <label>Email:</label><br />
           <input type="email" placeholder="Your email" style={inputStyle} />
-
           <br />
           <label>Message:</label><br />
           <textarea placeholder="Your message" style={textareaStyle}></textarea>
-
           <br />
           <button
             type="submit"
@@ -124,6 +116,7 @@ function Contact() {
           <a
             href="https://artstation.com/"
             target="_blank"
+            rel="noopener noreferrer"
             className="contact-link"
           >
             Art Station
@@ -132,6 +125,7 @@ function Contact() {
           <a
             href="https://linkedin.com/"
             target="_blank"
+            rel="noopener noreferrer"
             className="contact-link"
           >
             LinkedIn

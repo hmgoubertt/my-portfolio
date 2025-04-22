@@ -5,11 +5,25 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import backgroundImage from './assets/background.jpg'; 
 
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div
+  className="app"
+  style={{
+    minHeight: '100vh',
+    width: '100%',
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed', 
+  
+    color: 'black',
+  }}
+>
+
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
